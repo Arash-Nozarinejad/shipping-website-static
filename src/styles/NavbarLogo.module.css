@@ -1,3 +1,3 @@
 .logoClass {
-    @apply flex items-center justify-between p-4 bg-gray-200;
+    @apply flex items-center justify-between;
 }
