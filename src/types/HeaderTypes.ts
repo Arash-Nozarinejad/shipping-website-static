@@ -4,4 +4,4 @@ export type HeaderPropType = {
     headerClass?: string;
     navLogoProp: NavbarLogoPropType;
     navLinksProp: NavbarPropType;
-}
+};
