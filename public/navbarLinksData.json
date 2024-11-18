@@ -1,0 +1,20 @@
+{
+    "items": [
+        {
+            "itemName": "Home",
+            "itemLink": "/"
+        },
+        {
+            "itemName": "Services",
+            "itemLink": "/services"
+        },
+        {
+            "itemName": "About Us",
+            "itemLink": "/services"
+        },
+        {
+            "itemName": "Contact Us",
+            "itemLink": "/services"
+        }
+    ]
+}
