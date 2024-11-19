@@ -5,6 +5,6 @@ export const fetchHeaderData = async (): Promise<HeaderData> => {
     return new Promise((resolve) => {
         setTimeout(() => {
             resolve(data as HeaderData);
-        }, 500);
+        }, 0);
     });
 };

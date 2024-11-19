@@ -1,6 +1,5 @@
 "use client";
 
-import headerStyle from './header.module.css';
 import { useEffect, useState } from 'react';
 import { HeaderData, NavLink } from './header.types';
 import { fetchHeaderData } from './header.utils';
@@ -35,7 +34,7 @@ const Header = () => {
                     <div key={index} className='relative group'>
                         <Link href={link.link} className={`${link.name === "Home" ? "underline hover:bg-gray-200" : "hover:bg-gray-200"} p-2`}>{link.name}</Link>
                         {link.subLinks && (
-                            <div className='absolute left-0 mt-2 shadow-md p-2 hidden group-hover:flex flex-col whitespace-nowrap'>
+                            <div className='absolute left-0 mt-2 shadow-md p-2 hidden group-hover:flex flex-col whitespace-nowrap bg-white'>
                                 {link.subLinks.map((subLink, subIndex) => (
                                     <Link 
                                     href={subLink.link}
