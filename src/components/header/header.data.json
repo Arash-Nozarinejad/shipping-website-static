@@ -1,0 +1,38 @@
+{
+    "links": [
+        {
+            "name": "Home",
+            "link": "/"
+        },
+        {
+            "name": "Services",
+            "link": "/services",
+            "subLinks": [
+                {
+                    "name": "Shipment Tracking",
+                    "link": "/services/shipment-tracking"
+                },
+                {
+                    "name": "Sea Shipments",
+                    "link": "/services/sea-shipments"
+                },
+                {
+                    "name": "Land Shipments",
+                    "link": "/services/land-shipments"
+                },
+                {
+                    "name": "Air Shipments",
+                    "link": "/services/air-shipments"
+                }
+            ]
+        },
+        {
+            "name": "About Us",
+            "link": "/about"
+        },
+        {
+            "name": "Contact Us",
+            "link": "/contact"
+        }
+    ]
+}
