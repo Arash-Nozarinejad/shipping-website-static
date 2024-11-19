@@ -4,7 +4,7 @@ const mainFunction = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, s
 
 const Hero = () => {
     return(
-        <div className="flex justify-between h-[75vh] mt-1 p-4 bg-blue-50">
+        <div className="flex justify-between 2xl:h-[35vh] h-[50vh] mt-1 p-4 bg-blue-50">
             {/* Website title and motto */}
             <div className="flex flex-col w-1/3">
                 <h1 className="text-xl font-bold">Shipping & Logistics LLC</h1>
