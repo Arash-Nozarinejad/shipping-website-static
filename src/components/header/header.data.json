@@ -1,4 +1,7 @@
 {
+    "websiteName": "Shipping and Logistics LLC",
+    "websiteLogo": "/website_logo.png",
+    "homepageUrl": "/",
     "links": [
         {
             "name": "Home",
