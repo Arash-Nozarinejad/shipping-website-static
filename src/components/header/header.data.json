@@ -1,6 +1,7 @@
 {
+    "websiteAddress": "/",
     "websiteName": "Shipping and Logistics Company",
-    "websiteLogo": "/website-logo.png",
+    "websiteLogo": "/website_logo.png",
     "links": [
         {
             "name": "Home",

@@ -10,6 +10,7 @@ export interface LinkType {
 }
 
 export interface HeaderType {
+    websiteAddress: string;
     websiteName: string;
     websiteLogo: string;
     links: LinkType[];
