@@ -1,16 +1,16 @@
-export interface subLinks {
+export interface SubLinksType {
     name: string;
     link: string;
 }
 
-export interface Link {
+export interface LinkType {
     name: string;
     link: string;
-    subLinks?: subLinks[];
+    subLinks?: SubLinksType[];
 }
 
-export interface Header {
+export interface HeaderType {
     websiteName: string;
     websiteLogo: string;
-    links: Link[];
+    links: LinkType[];
 }
