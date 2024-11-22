@@ -1,0 +1,50 @@
+{
+    "websiteName": "Shipping and Logistics Company",
+    "websiteLogo": "/website-logo.png",
+    "links": [
+        {
+            "name": "Home",
+            "link": "/"
+        },
+        {
+            "name": "Shipping & Tracking",
+            "link": "/shipping",
+            "subLinks": [
+                {
+                    "name": "Send Shipment",
+                    "link": "/shipping/send"
+                },
+                {
+                    "name": "Track Shipment",
+                    "link": "/shipping/track"
+                }
+            ]
+        },
+        {
+            "name": "Logistics Solutions",
+            "link": "/logistics",
+            "subLinks": [
+                {
+                    "name": "Sea Cargo",
+                    "link": "/logistics/sea"
+                },
+                {
+                    "name": "Land Shipment",
+                    "link": "/logistics/land"
+                },
+                {
+                    "name": "Air Shipment",
+                    "link": "/logistics/air"
+                },
+                {
+                    "name": "Multi Modal Shipment",
+                    "link": "/logistics/multy-modal"
+                },
+                {
+                    "name": "Last Mile Delivery",
+                    "link": "/logistics/last-mile"
+                }
+            ]
+        }
+    ]
+}
