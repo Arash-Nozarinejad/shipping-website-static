@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { HeaderType, LinkType, SubLinksType } from "./header.types";
+import { LinkType, SubLinksType } from "./header.types";
 import { getHeaderData } from "./header.utils";
 import Image from "next/image";
 
@@ -16,20 +16,14 @@ const Header = () => {
                 
             </div>
             {/* Navigation Links */}
-            <div className='flex space-x-4 '>
-                {headerData.links.map((link: LinkType, index) => (
-                    <div key={index} className='relative group'>
-                        <Link href={link.link} className={`${link.name === "Home" ? "underline hover:bg-gray-200" : "hover:bg-gray-200"} p-2`}>{link.name}</Link>
-                        {link.subLinks && (
-                            <div className='absolute left-0 mt-2 shadow-md p-2 hidden group-hover:flex flex-col whitespace-nowrap bg-white'>
-                                {link.subLinks.map((subLink, subIndex) => (
-                                    <Link 
-                                    href={subLink.link}
-                                    key={subIndex}
-                                    className='block hover:bg-gray-200'
-                                    >
-                                        {subLink.name}
-                                    </Link>
+            <div className="flex space-x-4">
+                {headerData.links.map((navLink: LinkType, index) => (
+                    <div key={index} className="group relative">
+                        <Link href={navLink.link} className="hover:bg-gray-200 p-2">{navLink.name}</Link>
+                        {navLink.subLinks && (
+                            <div className="hidden absolute left-0 mt-2 p-2 group-hover:flex flex-col whitespace-nowrap bg-white shadow-sm">
+                                {navLink.subLinks.map((subLink: SubLinksType, subIndex) => (
+                                    <Link key={subIndex} href={subLink.link} className="hover:bg-gray-100 p-2">{subLink.name}</Link>
                                 ))}
                             </div>
                         )}
