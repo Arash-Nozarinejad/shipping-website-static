@@ -1,0 +1,15 @@
+.heroWrapper {
+  @apply flex flex-col;
+}
+
+.mainCardWrapper {
+  @apply flex flex-col;
+}
+
+.mainCardWrapperSm {
+  @apply sm:bg-blue-100;
+}
+
+.secondaryCardWrapper {
+  @apply flex;
+}
