@@ -21,7 +21,7 @@ const Header = () => {
                     <div key={index} className="group relative">
                         <Link href={navLink.link} className="hover:bg-gray-200 p-2">{navLink.name}</Link>
                         {navLink.subLinks && (
-                            <div className="hidden absolute left-0 mt-2 p-2 group-hover:flex flex-col whitespace-nowrap bg-white shadow-sm">
+                            <div className="hidden absolute left-0 mt-0 p-2 group-hover:flex flex-col whitespace-nowrap bg-white shadow-sm">
                                 {navLink.subLinks.map((subLink: SubLinksType, subIndex) => (
                                     <Link key={subIndex} href={subLink.link} className="hover:bg-gray-100 p-2">{subLink.name}</Link>
                                 ))}
