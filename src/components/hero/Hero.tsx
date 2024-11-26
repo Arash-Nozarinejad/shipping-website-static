@@ -3,6 +3,8 @@
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import styles from "./hero.module.css";
+import Image from "next/image";
+import Link from "next/link";
 
 const Hero = () => {
     // state to manage input value
@@ -37,7 +39,11 @@ const Hero = () => {
             {/** Bottom Cards */}
             <div className={styles.secondaryCardWrapper}>
                 {/** Card 1 */}
-                <div>Card1</div>
+                <div>
+                    <Image src="" alt="" width={50} height={50} />
+                    <p></p>
+                    <Link href=""></Link>
+                </div>
                 {/** Card 2 */}
                 <div>Card2</div>
                 {/** Card 3 */}
