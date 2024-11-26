@@ -46,6 +46,14 @@
                     "link": "/logistics/last-mile"
                 }
             ]
+        },
+        {
+            "name": "About",
+            "link": "/about"
+        },
+        {
+            "name": "Contact Us",
+            "link": "/contact"
         }
     ]
 }
