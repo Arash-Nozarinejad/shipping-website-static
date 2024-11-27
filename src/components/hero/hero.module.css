@@ -1,38 +1,24 @@
-.heroWrapperSM {
-  @apply flex flex-col m-0 p-0;
-}
-
-.topCardSM {
-  @apply flex flex-col items-center justify-center w-1/2 h-1/2 bg-cover bg-center;
-  background-image: url('/image.jpg');
-  height: 50vh;
-  width: 50vh;
-}
-
-.topCardFormSM {
-  @apply flex flex-col my-4;
-}
-
-.topCardFormTextInputSM {
-  @apply p-4 rounded-md text-base;
-  @apply focus:outline-none focus:ring-2 focus:ring-blue-400;
-  @apply hover:ring-2 hover:ring-gray-300;
-  @apply transition-all duration-200 ease-in-out
-}
-
-.topCardFormTextButtonSM {
-  @apply bg-red-500 text-lg font-bold text-white rounded-md mt-5;
-  @apply hover:bg-red-700 hover:shadow-lg;
-  height: 3rem;
-  @apply transition-all duration-300 ease-in-out
-}
-
-.bottomCardsWrapperSM {
-  @apply flex flex-col;
+.heroWrapper {
+  @apply flex flex-col h-screen;
   @apply m-0 p-0;
 }
 
-.bottomCardSM {
+.topCard {
+  @apply flex flex-col items-center justify-center bg-cover bg-center;
+  background-image: url('/image.jpg');
+  flex: 0 0 50%;
+}
+
+.topCardForm {
+  @apply flex flex-col my-4;
+}
+
+.bottomCardsWrapper {
+  @apply flex flex-col flex-grow;
+  @apply m-0 p-0;
+}
+
+.bottomCard {
   @apply flex flex-col w-full;
   height: 25vh;
   @apply border border-gray-200;
@@ -40,24 +26,33 @@
   @apply mb-2;
 }
 
-.bottomCardImageSM {
+.bottomCardImage {
   @apply ml-2 mt-2;
 }
 
-.bottomCardParagraphSM {
+.bottomCardParagraph {
   @apply text-base text-justify p-2;
 }
 
-.bottomCardLinkSM {
+.bottomCardLink {
   @apply px-4 py-2 ml-2 bg-blue-500 font-bold text-white rounded-md;
   @apply no-underline;
   @apply hover:bg-blue-700 hover:shadow-lg;
   @apply transition-all duration-300 ease-in-out;
-  width: fit-content; /* Explicitly sets the width to wrap around the content */
+  width: fit-content;
 }
 
+@media (min-width: 768px) {
+  .topCardForm {
+    @apply flex flex-row items-center justify-center gap-4;
+  }
 
-/*
-    comment
-  */
+  .topCardFormTextInput {
+    @apply flex-grow h-12 p-3 rounded-md text-base; /* Adjusted for alignment */
+  }
 
+  .topCardFormTextButton {
+    @apply h-12 w-40 bg-red-500 text-lg font-bold text-white rounded-md;
+    @apply hover:bg-red-700 hover:shadow-lg transition-all duration-300 ease-in-out;
+  }
+}
