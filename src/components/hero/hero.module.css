@@ -49,9 +49,9 @@
 }
 
 .bottomCardLink {
-  @apply px-4 py-2 ml-2 bg-blue-500 font-bold text-white rounded-md;
+  @apply px-4 py-2 ml-2 bg-orange-500 font-bold text-white rounded-md;
   @apply no-underline;
-  @apply hover:bg-blue-700 hover:shadow-lg;
+  @apply hover:bg-orange-700 hover:shadow-lg;
   @apply transition-all duration-300 ease-in-out;
   width: fit-content;
 }
@@ -95,5 +95,24 @@
 
   .bottomCard {
     background: white;
+  }
+
+  .topCard {
+    @apply flex flex-col items-center justify-center bg-cover bg-center; /* Center content */
+    background-image: url('/image.jpg');
+    flex: 0 0 50%;
+    animation: zoomInOut 30s infinite ease-in-out;
+  }
+  
+  @keyframes zoomInOut {
+    0% {
+      background-size: 100%;
+    }
+    50% {
+      background-size: 110%;
+    }
+    100% {
+      background-size: 100%;
+    }
   }
 }
