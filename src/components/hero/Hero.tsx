@@ -21,19 +21,20 @@ const Hero = () => {
         }
     };
     return (      
-        <div className="">
+        <div className={styles.heroWrapperSM}>
             {/** Top Card */}
-            <div className="">
-                <form onSubmit={handleSubmit}>
+            <div className={styles.topCardSM}>
+                <form onSubmit={handleSubmit} className={styles.topCardFormSM}>
                     <input 
                         type="text"
                         placeholder="Enter bill of lading"
                         value={inputValue}
                         onChange={(e) => setInputValue(e.target.value)}
+                        className={styles.topCardFormTextInputSM}
                     />
                     <button 
                         type="submit"
-                    >Track Shipment</button>
+                        className={styles.topCardFormTextButtonSM}>Track Shipment</button>
                 </form>
             </div>
             {/** Bottom Cards */}
