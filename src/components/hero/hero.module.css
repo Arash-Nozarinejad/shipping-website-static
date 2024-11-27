@@ -1,5 +1,5 @@
 .heroWrapperSM {
-  @apply flex flex-col;
+  @apply flex flex-col m-0 p-0;
 }
 
 .topCardSM {
@@ -26,6 +26,36 @@
   height: 3rem;
   @apply transition-all duration-300 ease-in-out
 }
+
+.bottomCardsWrapperSM {
+  @apply flex flex-col;
+  @apply m-0 p-0;
+}
+
+.bottomCardSM {
+  @apply flex flex-col w-full;
+  height: 25vh;
+  @apply border border-gray-200;
+  @apply shadow-sm;
+  @apply mb-2;
+}
+
+.bottomCardImageSM {
+  @apply ml-2 mt-2;
+}
+
+.bottomCardParagraphSM {
+  @apply text-base text-justify p-2;
+}
+
+.bottomCardLinkSM {
+  @apply px-4 py-2 ml-2 bg-blue-500 font-bold text-white rounded-md;
+  @apply no-underline;
+  @apply hover:bg-blue-700 hover:shadow-lg;
+  @apply transition-all duration-300 ease-in-out;
+  width: fit-content; /* Explicitly sets the width to wrap around the content */
+}
+
 
 /*
     comment

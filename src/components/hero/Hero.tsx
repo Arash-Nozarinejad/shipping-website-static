@@ -38,24 +38,24 @@ const Hero = () => {
                 </form>
             </div>
             {/** Bottom Cards */}
-            <div className="">
+            <div className={styles.bottomCardsWrapperSM}>
                 {/** Card 1 */}
-                <div>
-                    <Image src="/icon.svg" alt="icon" width={50} height={50} />
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <Link href="">Learn more</Link>
+                <div className={styles.bottomCardSM}>
+                    <Image src="/icon.svg" alt="icon" width={50} height={50} className={styles.bottomCardImageSM} />
+                    <p className={styles.bottomCardParagraphSM}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <Link href="" className={styles.bottomCardLinkSM}>Learn more</Link>
                 </div>
                 {/** Card 2 */}
-                <div>
-                    <Image src="/icon.svg" alt="icon" width={50} height={50} />
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <Link href="">Learn more</Link>
+                <div className={styles.bottomCardSM}>
+                    <Image src="/icon.svg" alt="icon" width={50} height={50} className={styles.bottomCardImageSM} />
+                    <p className={styles.bottomCardParagraphSM}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <Link href="" className={styles.bottomCardLinkSM}>Learn more</Link>
                 </div>
                 {/** Card 3 */}
-                <div>
-                    <Image src="/icon.svg" alt="icon" width={50} height={50} />
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <Link href="">Learn more</Link>
+                <div className={styles.bottomCardSM}>
+                    <Image src="/icon.svg" alt="icon" width={50} height={50} className={styles.bottomCardImageSM} />
+                    <p className={styles.bottomCardParagraphSM}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <Link href="" className={styles.bottomCardLinkSM}>Learn more</Link>
                 </div>
             </div>
         </div>
