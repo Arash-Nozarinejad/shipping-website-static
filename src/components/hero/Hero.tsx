@@ -21,9 +21,9 @@ const Hero = () => {
         }
     };
     return (      
-        <div className={styles.heroWrapper}>
+        <div className="">
             {/** Top Card */}
-            <div className={`${styles.mainCardWrapper} ${styles.mainCardWrapperSm}`}>
+            <div className="">
                 <form onSubmit={handleSubmit}>
                     <input 
                         type="text"
@@ -37,17 +37,25 @@ const Hero = () => {
                 </form>
             </div>
             {/** Bottom Cards */}
-            <div className={styles.secondaryCardWrapper}>
+            <div className="">
                 {/** Card 1 */}
                 <div>
-                    <Image src="" alt="" width={50} height={50} />
-                    <p></p>
-                    <Link href=""></Link>
+                    <Image src="/icon.svg" alt="icon" width={50} height={50} />
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <Link href="">Learn more</Link>
                 </div>
                 {/** Card 2 */}
-                <div>Card2</div>
+                <div>
+                    <Image src="/icon.svg" alt="icon" width={50} height={50} />
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <Link href="">Learn more</Link>
+                </div>
                 {/** Card 3 */}
-                <div>Card3</div>
+                <div>
+                    <Image src="/icon.svg" alt="icon" width={50} height={50} />
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <Link href="">Learn more</Link>
+                </div>
             </div>
         </div>
     )
