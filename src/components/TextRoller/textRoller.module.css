@@ -1,0 +1,46 @@
+.textRollerContainer {
+    @apply relative w-screen h-[25vh] bg-gray-900 flex flex-col items-center justify-center overflow-hidden;
+}
+
+.textRollerBranches {
+    @apply flex space-x-8 absolute top-1/4;
+    animation: text-roll-horizontal 12s linear infinite;
+}
+
+.textRoller {
+    @apply flex space-x-8 absolute top-1/2;
+    animation: text-roll-horizontal 12s linear infinite;
+}
+
+.textRollerItem {
+    @apply text-white text-4xl;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+@keyframes text-roll-horizontal {
+    0% {
+        transform: translateX(100%);
+    }
+    20% {
+        opacity: 1;
+        transform: translateX(50%);
+    }
+    40% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+    60% {
+        opacity: 1;
+        transform: translateX(-50%);
+    }
+    80% {
+        opacity: 1;
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(-200%);
+    }
+}
