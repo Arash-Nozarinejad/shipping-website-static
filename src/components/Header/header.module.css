@@ -1,0 +1,19 @@
+.headerWrapper{
+    @apply flex; 
+}
+
+.mobileMenuWrapper {
+    @apply md:hidden bg-white w-[100vh] h-[100vh] flex;
+}
+
+.mobileMenuLinks {
+    @apply flex
+}
+
+.mobileMenuLinksMain {
+    @apply hover:cursor-auto mb-4 pb-4;
+}
+
+.mobileMenuLinksSub {
+    @apply ml-10;
+}
